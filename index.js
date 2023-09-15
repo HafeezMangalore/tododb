@@ -6,7 +6,7 @@ app.set('view engine', 'ejs');
 app.use(body.urlencoded({extended:true}))
 app.use(express.static("public"))
 
-mongoose.connect("mongodb+srv://hafeezmangalore7:Hafeez@123@cluster0.ej1noqo.mongodb.net/tododb", {useNewUrlParser:true})
+mongoose.connect("mongodb+srv://hafeez:hafeez123@cluster0.ej1noqo.mongodb.net/tododb", {useNewUrlParser:true})
 
 const todoschema=new mongoose.Schema({task:String})
 const todomodel=mongoose.model("tasks",todoschema)
